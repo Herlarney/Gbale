@@ -6,7 +6,7 @@ void main() {
   runApp(ScreenUtilInit(
       designSize: const Size(390, 844),
       minTextAdapt: true,
-      builder: (context, child) => MyApp()));
+      builder: (context, child) => const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
