@@ -17,6 +17,7 @@ dependencies:
   flutter_screenutil: ^5.6.0
 
   # Provider state management library extension with classes to boost mvvm architecture
+  google_fonts: ^3.0.1
   stacked: ^3.0.1
   stacked_hooks: ^0.2.2
   stacked_services: ^0.9.8
@@ -39,20 +40,20 @@ flutter:
   
   assets:
     - assets/fonts/
-  #   - images/a_dot_ham.jpeg
+    - images/
  
   fonts:
     - family: LexendMega 
       fonts:
-        - asset: fonts/LexendMega-Regular.ttf
-        - asset: fonts/Black-Italic.ttf
-        - asset: fonts/Bold-Italic.ttf
-        - asset: fonts/ExtraBold-Italic.ttf
-        - asset: fonts/ExtraLight-Italic.ttf
-        - asset: fonts/Light-Italic.ttf
-        - asset: fonts/Medium-Italic.ttf
-        - asset: fonts/SemiBold-Italic.ttf
-        - asset: fonts/Thin-Italic.ttf
+        - asset: assets/fonts/LexendMega-Regular.ttf
+        - asset: assets/fonts/LexendMega-Black.ttf
+        - asset: assets/fonts/LexendMega-Bold.ttf
+        - asset: assets/fonts/LexendMega-ExtraBold.ttf
+        - asset: assets/fonts/LexendMega-ExtraLight.ttf
+        - asset: assets/fonts/LexendMega-Light.ttf
+        - asset: assets/fonts/LexendMega-Medium.ttf
+        - asset: assets/fonts/LexendMega-SemiBold.ttf
+        - asset: assets/fonts/LexendMega-Thin.ttf
         
   #         style: italic
   #   - family: Trajan Pro
