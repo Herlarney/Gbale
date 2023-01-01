@@ -1,0 +1,5 @@
+class GbaleAssets {
+  GbaleAssets._();
+
+  
+}
