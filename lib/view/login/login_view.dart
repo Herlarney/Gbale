@@ -32,16 +32,18 @@ class LoginView extends StatelessWidget {
                 const GbaleSpacing.height(20),
                 CustomText(
                   text: 'Login',
-                  textStyle:
-                      textheme.bodyMedium!.copyWith(color: Colors.green,
-),
+                  textStyle: textheme.bodyMedium!.copyWith(
+                    color: Colors.green,
+                  ),
                 ),
                 const GbaleSpacing.height(50),
                 GbaleTextFormFieldWidget(
+                  prefixIcon: const Icon(Icons.email),
                   hintText: 'Email',
                 ),
                 const GbaleSpacing.height(50),
                 GbaleTextFormFieldWidget(
+                  prefixIcon: const Icon(Icons.visibility),
                   hintText: 'Password',
                 ),
                 const GbaleSpacing.height(20),
@@ -51,9 +53,9 @@ class LoginView extends StatelessWidget {
                     InkWell(
                       onTap: () => model.navigateToForgotPassword(),
                       child: CustomText(
-                        text: 'Forgot Password',
-                        textStyle: textheme.bodySmall!.copyWith(color:const Color(0xFF020313))
-                      ),
+                          text: 'Forgot Password',
+                          textStyle: textheme.bodySmall!
+                              .copyWith(color: const Color(0xFF020313))),
                     ),
                     const GbaleSpacing.width(10),
                     InkWell(
@@ -70,7 +72,12 @@ class LoginView extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    CustomButton(label: 'Login',textStyle: textheme.bodyLarge!.copyWith(color:Colors.white ), onTap: () => model.login(),),
+                    CustomButton(
+                      label: 'Login',
+                      textStyle:
+                          textheme.bodyLarge!.copyWith(color: Colors.white),
+                      onTap: () => model.login(),
+                    ),
                   ],
                 )
               ],

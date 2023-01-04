@@ -6,7 +6,6 @@ import 'package:gbale/shared/gbale_textform.dart';
 import 'package:gbale/view/Signup/signup_viewmodel.dart';
 import 'package:stacked/stacked.dart';
 
-
 class SignUpView extends StatelessWidget {
   const SignUpView({Key? key}) : super(key: key);
 
@@ -28,18 +27,20 @@ class SignUpView extends StatelessWidget {
             ),
             const GbaleSpacing.height(20),
             GbaleTextFormFieldWidget(
-              hintText: 'First name',
+              hintText: 'Name',
             ),
             const GbaleSpacing.height(20),
             GbaleTextFormFieldWidget(
-              hintText: 'Second name',
+              hintText: 'Company name',
             ),
             const GbaleSpacing.height(20),
             GbaleTextFormFieldWidget(
+              prefixIcon: const Icon(Icons.email),
               hintText: 'Email',
             ),
             const GbaleSpacing.height(20),
             GbaleTextFormFieldWidget(
+              prefixIcon: const Icon(Icons.visibility),
               hintText: 'Password',
             ),
             const GbaleSpacing.height(20),
@@ -50,7 +51,8 @@ class SignUpView extends StatelessWidget {
                   onTap: () => model.navigateToLogin(),
                   child: CustomText(
                     text: 'Back',
-                    textStyle: textheme.bodySmall!.copyWith(color:const Color(0xFF020313)),
+                    textStyle: textheme.bodySmall!
+                        .copyWith(color: const Color(0xFF020313)),
                   ),
                 ),
               ],

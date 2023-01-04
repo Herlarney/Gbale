@@ -49,7 +49,7 @@ class UploadView extends StatelessWidget {
                     hintText: 'Description',
                   ),
                 ),
-                const GbaleSpacing.height(5),
+                const GbaleSpacing.smallHeight(),
                 SizedBox(
                   width: double.infinity,
                   child: GbaleTextFormFieldWidget(
@@ -58,30 +58,58 @@ class UploadView extends StatelessWidget {
                     hintText: 'Annual Rent',
                   ),
                 ),
-                DropdownButton<String>(
-                    hint: const CustomText(text: 'House Type'),
-                    isExpanded: true,
-                    value: model.selectedRoom,
-                    items: model.rooms.map((String value) {
-                      return DropdownMenuItem<String>(
-                        child: Text(value),
-                        value: value,
-                      );
-                    }).toList(),
-                    onChanged: model.updateSelectedRoom),
-                const GbaleSpacing.height(5),
-                DropdownButton<String>(
-                    icon: const Icon(Icons.location_city_sharp),
-                    hint: const CustomText(text: 'City'),
-                    isExpanded: true,
-                    value: model.selectedCity,
-                    items: model.city.map((String value) {
-                      return DropdownMenuItem<String>(
-                        child: Text(value),
-                        value: value,
-                      );
-                    }).toList(),
-                    onChanged: model.updateSelectedCity),
+                const GbaleSpacing.smallHeight(),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 1),
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.white,
+                  ),
+                  child: DropdownButton<String>(
+                      hint: const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8.0),
+                        child: CustomText(text: 'House Type'),
+                      ),
+                      isExpanded: true,
+                      value: model.selectedRoom,
+                      items: model.rooms.map((String value) {
+                        return DropdownMenuItem<String>(
+                          child: Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 8.0),
+                            child: Text(value),
+                          ),
+                          value: value,
+                        );
+                      }).toList(),
+                      onChanged: model.updateSelectedRoom),
+                ),
+                const GbaleSpacing.smallHeight(),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 1),
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.white,
+                  ),
+                  child: DropdownButton<String>(
+                      hint: const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10.0),
+                        child: CustomText(text: 'City'),
+                      ),
+                      isExpanded: true,
+                      value: model.selectedCity,
+                      items: model.city.map((String value) {
+                        return DropdownMenuItem<String>(
+                          child: Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 8.0),
+                            child: Text(value),
+                          ),
+                          value: value,
+                        );
+                      }).toList(),
+                      onChanged: model.updateSelectedCity),
+                ),
                 const GbaleSpacing.smallHeight(),
                 SizedBox(
                   width: double.infinity,
@@ -120,23 +148,37 @@ class UploadView extends StatelessWidget {
                   ),
                 ),
                 const GbaleSpacing.largeHeight(),
-                DropdownButton<String>(
-                    icon: const Icon(Icons.location_on),
-                    hint: const CustomText(text: 'Area'),
-                    isExpanded: true,
-                    value: model.selectedArea,
-                    items: model.area.map((String value) {
-                      return DropdownMenuItem<String>(
-                        child: Text(value),
-                        value: value,
-                      );
-                    }).toList(),
-                    onChanged: model.updateSelectedArea),
-                    GbaleSpacing.height(15.h),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 1),
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.white,
+                  ),
+                  child: DropdownButton<String>(
+                      hint: const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10.0),
+                        child: CustomText(
+                            textAlign: TextAlign.center, text: 'Area'),
+                      ),
+                      isExpanded: true,
+                      value: model.selectedArea,
+                      items: model.area.map((String value) {
+                        return DropdownMenuItem<String>(
+                          child: Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 8.0),
+                            child: Text(value),
+                          ),
+                          value: value,
+                        );
+                      }).toList(),
+                      onChanged: model.updateSelectedArea),
+                ),
+                GbaleSpacing.height(15.h),
                 SizedBox(
                   width: double.infinity,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal:25.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
                     child: CustomText(
                       text: 'A minimum of 3 pictures is required',
                       textStyle: textheme.bodySmall!.copyWith(
@@ -147,11 +189,10 @@ class UploadView extends StatelessWidget {
                 ),
                 GbaleSpacing.height(15.h),
                 Image.asset('images/Group23.png'),
-                 GbaleSpacing.height(25.h),
-                 const CustomButton(
+                GbaleSpacing.height(25.h),
+                const CustomButton(
                   label: 'Upload Properties',
-                 )
-
+                )
               ],
             ),
           ),
