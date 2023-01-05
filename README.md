@@ -33,7 +33,7 @@
 * Always declare return types in your methods.
 * Put required named parameters first.
 * Always require non-null named parameters (required).
-* All reusable components. should start with Afm meaning (**ApplyForMe**) to ensure code uniformity. e.g ApplyForMe.bigSpacing(),
+* All reusable components. should start with Afm meaning (**Gbale**) to ensure code uniformity. e.g Gbale.bigSpacing(),
 * Use absoulute imports for external packages and use relative imports for files in project.[Here's Why](https://dart-lang.github.io/linter/lints/prefer_relative_imports.html)
 * Indent your code where appropriate `(e.g Use two-space indentation.)`
        Click [Here](https://medium.com/@chukwuemeka.ezeokwelume/2-vs-4-spaces-or-tabs-for-writing-code-e82da3aa5b8d) to know more
