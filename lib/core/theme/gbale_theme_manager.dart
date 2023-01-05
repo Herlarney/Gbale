@@ -2,18 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:gbale/core/constants/gbale_colors.dart';
 
 /// You should assign the textStyle as so => 'textStyle: Theme.of(context).textStyle.textStyleNameAccordingToTheme' e.g Theme.of(context).colorScheme.bodyLarge
-/// 
+///
 class GbaleThemeManager {
   GbaleThemeManager._();
 
   static String get _fontFamily => 'Lexend Mega';
 
-static ThemeData lightTheme = _themeData(_lightColorScheme);
+  static ThemeData lightTheme = _themeData(_lightColorScheme);
 
-
-
-
- static final ColorScheme _lightColorScheme = const ColorScheme.light()
+  static final ColorScheme _lightColorScheme = const ColorScheme.light()
       .copyWith(
           primary: GbaleColors.primary,
           secondary: GbaleColors.secondaryColor,
@@ -25,7 +22,7 @@ static ThemeData lightTheme = _themeData(_lightColorScheme);
           onBackground: GbaleColors.infoColor,
           onTertiary: GbaleColors.yellow);
 
- static ThemeData _themeData(ColorScheme colorScheme) => ThemeData(
+  static ThemeData _themeData(ColorScheme colorScheme) => ThemeData(
       scaffoldBackgroundColor: colorScheme.background,
       colorScheme: colorScheme,
       textTheme: _textTheme(colorScheme),
@@ -35,12 +32,10 @@ static ThemeData lightTheme = _themeData(_lightColorScheme);
       disabledColor: colorScheme.inverseSurface,
       brightness: colorScheme.brightness,
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
-       backgroundColor: colorScheme.background,
+        backgroundColor: colorScheme.background,
       ));
 
-
-
-static AppBarTheme _appBarTheme(ColorScheme colorScheme) => AppBarTheme(
+  static AppBarTheme _appBarTheme(ColorScheme colorScheme) => AppBarTheme(
         backgroundColor: colorScheme.background,
         iconTheme: _iconTheme(colorScheme),
         actionsIconTheme: _iconTheme(colorScheme),
@@ -50,12 +45,11 @@ static AppBarTheme _appBarTheme(ColorScheme colorScheme) => AppBarTheme(
         color: colorScheme.primary,
       );
 
-       static TextTheme _textTheme(ColorScheme colorScheme) => TextTheme(
+  static TextTheme _textTheme(ColorScheme colorScheme) => TextTheme(
         displayLarge: TextStyle(
           fontSize: 96,
           color: colorScheme.onPrimary,
           fontWeight: FontWeight.w500,
-         
         ),
         displayMedium: TextStyle(
           fontSize: 72,
@@ -85,7 +79,6 @@ static AppBarTheme _appBarTheme(ColorScheme colorScheme) => AppBarTheme(
         bodyLarge: TextStyle(
           fontSize: 24,
           color: colorScheme.surface,
-          
           fontWeight: FontWeight.w500,
         ),
         bodyMedium: TextStyle(
@@ -95,7 +88,7 @@ static AppBarTheme _appBarTheme(ColorScheme colorScheme) => AppBarTheme(
         ),
         bodySmall: TextStyle(
           fontSize: 16,
-          color: colorScheme.surface,
+          color: colorScheme.primary,
           fontWeight: FontWeight.w500,
         ),
       );

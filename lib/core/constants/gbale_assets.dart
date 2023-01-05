@@ -1,3 +1,4 @@
+
 class GbaleAssets {
   GbaleAssets._();
 
@@ -5,3 +6,4 @@ class GbaleAssets {
   static const String appBarbell = 'assets/png/bell.png';
   static const String manageProperty = 'assets/png/manageproperty.png';
 }
+
