@@ -30,10 +30,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Gbale',
       navigatorKey: StackedService.navigatorKey,
-
       onGenerateRoute: StackedRouter().onGenerateRoute,
-
-       onGenera
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: GbaleThemeManager.lightTheme,
