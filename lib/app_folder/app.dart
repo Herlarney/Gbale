@@ -4,7 +4,7 @@ import 'package:stacked_services/stacked_services.dart';
 
 @StackedApp(
   routes: [
-    AdaptiveRoute(page: ManagePortfolio),
+   
   ],
   dependencies:[ LazySingleton(classType: NavigationService)]
 )
