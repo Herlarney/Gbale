@@ -6,6 +6,7 @@ import 'package:gbale/app_folder/app.locator.dart';
 
 import 'package:gbale/app_folder/app.router.dart';
 import 'package:gbale/core/theme/gbale_theme_manager.dart';
+import 'package:gbale/view/manage_portfolio._view.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 Future main() async {
@@ -29,8 +30,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Gbale',
-      navigatorKey: StackedService.navigatorKey,
-      onGenerateRoute: StackedRouter().onGenerateRoute,
+      // navigatorKey: StackedService.navigatorKey,
+      // onGenerateRoute: StackedRouter().onGenerateRoute,
+      home: const ManagePortfolio(),
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: GbaleThemeManager.lightTheme,
