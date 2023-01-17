@@ -12,7 +12,6 @@ import 'package:gbale/view/homepage/components/feed.dart' as _i8;
 import 'package:gbale/view/homepage/components/log_out.dart' as _i9;
 import 'package:gbale/view/homepage/homepageview.dart' as _i6;
 import 'package:gbale/view/login/login_view.dart' as _i4;
-import 'package:gbale/view/manage_portfolio._view.dart' as _i10;
 import 'package:gbale/view/request/request_view.dart' as _i11;
 import 'package:gbale/view/Signup/signup_view.dart' as _i3;
 import 'package:gbale/view/splash_screen/splash_view.dart' as _i2;
@@ -90,10 +89,6 @@ class StackedRouter extends _i1.RouterBase {
       page: _i9.LogOut,
     ),
     _i1.RouteDef(
-      Routes.managePortfolio,
-      page: _i10.ManagePortfolio,
-    ),
-    _i1.RouteDef(
       Routes.request,
       page: _i11.Request,
     ),
@@ -148,12 +143,6 @@ class StackedRouter extends _i1.RouterBase {
     _i9.LogOut: (data) {
       return _i1.buildAdaptivePageRoute<dynamic>(
         builder: (context) => const _i9.LogOut(),
-        settings: data,
-      );
-    },
-    _i10.ManagePortfolio: (data) {
-      return _i1.buildAdaptivePageRoute<dynamic>(
-        builder: (context) => const _i10.ManagePortfolio(),
         settings: data,
       );
     },

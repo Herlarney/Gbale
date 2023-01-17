@@ -120,16 +120,6 @@ class UploadView extends StatelessWidget {
                     ),
                   ),
                 ),
-                const GbaleSpacing.smallHeight(),
-                SizedBox(
-                  width: double.infinity,
-                  child: CustomText(
-                    text: 'Additional Fee',
-                    textStyle: textheme.bodySmall!.copyWith(
-                      color: Colors.green,
-                    ),
-                  ),
-                ),
                 const GbaleSpacing.height(10),
                 SizedBox(
                   width: double.infinity,

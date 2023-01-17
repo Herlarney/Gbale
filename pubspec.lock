@@ -63,7 +63,7 @@ packages:
       name: build_resolvers
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.10"
+    version: "2.1.0"
   build_runner:
     dependency: "direct dev"
     description:
@@ -105,7 +105,7 @@ packages:
       name: checked_yaml
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.1"
+    version: "2.0.2"
   clock:
     dependency: transitive
     description:
@@ -133,7 +133,7 @@ packages:
       name: convert
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.1.0"
+    version: "3.1.1"
   crypto:
     dependency: transitive
     description:
@@ -540,7 +540,7 @@ packages:
       name: stacked_generator
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.8.1"
+    version: "0.8.3"
   stacked_hooks:
     dependency: "direct main"
     description:
@@ -554,7 +554,7 @@ packages:
       name: stacked_services
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.9.8"
+    version: "0.9.9"
   stream_channel:
     dependency: transitive
     description:
@@ -594,13 +594,6 @@ packages:
     dependency: transitive
     description:
       name: timing
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
-  toggle_bar:
-    dependency: "direct main"
-    description:
-      name: toggle_bar
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
@@ -661,5 +654,5 @@ packages:
     source: hosted
     version: "3.1.1"
 sdks:
-  dart: ">=2.17.6 <3.0.0"
+  dart: ">=2.18.0 <3.0.0"
   flutter: ">=3.0.0"

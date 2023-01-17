@@ -20,7 +20,7 @@ dependencies:
   stacked: ^3.0.1
   stacked_hooks: ^0.2.2
   stacked_services: ^0.9.8
-  toggle_bar: ^1.0.0
+  
 
 dev_dependencies:
   build_runner: ^2.3.3
