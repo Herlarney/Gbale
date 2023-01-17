@@ -41,6 +41,7 @@ flutter:
   assets:
     - assets/fonts/
     - images/
+    - assets/png/
  
   fonts:
     - family: LexendMega 
