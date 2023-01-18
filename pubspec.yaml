@@ -33,12 +33,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
+  
   assets:
     - assets/fonts/
     - images/
     - assets/png/
-
+ 
   fonts:
     - family: LexendMega
       fonts:
