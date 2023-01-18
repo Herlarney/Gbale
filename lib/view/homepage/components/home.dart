@@ -75,6 +75,7 @@ class Home extends ViewModelWidget<HomePageViewModel> {
               Row(
                 children: <Widget>[
                   GestureDetector(
+                    onTap: () => model.navigateToRequest(),
                     child: Image.asset(
                       'images/Group17.png',
                       fit: BoxFit.cover,

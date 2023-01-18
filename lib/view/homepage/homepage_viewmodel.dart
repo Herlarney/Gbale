@@ -12,4 +12,10 @@ class HomePageViewModel extends IndexTrackingViewModel {
       Routes.uploadView,
     );
   }
+
+  void navigateToRequest() {
+    _navigationService.navigateTo(
+      Routes.request,
+    );
+  }
 }

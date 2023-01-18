@@ -1,7 +1,7 @@
 name: gbale
 description: A new Flutter project.
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
 
@@ -12,7 +12,6 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
-    
     # used for adaptiveness and responsiveness
   flutter_screenutil: ^5.6.0
 
@@ -30,12 +29,9 @@ dev_dependencies:
     sdk: flutter
   freezed_annotation: ^2.2.0
   stacked_generator: ^0.8.1
-  
-
+ 
 
 flutter:
-
- 
   uses-material-design: true
   
   assets:
@@ -44,7 +40,7 @@ flutter:
     - assets/png/
  
   fonts:
-    - family: LexendMega 
+    - family: LexendMega
       fonts:
         - asset: assets/fonts/LexendMega-Regular.ttf
         - asset: assets/fonts/LexendMega-Black.ttf
@@ -55,7 +51,6 @@ flutter:
         - asset: assets/fonts/LexendMega-Medium.ttf
         - asset: assets/fonts/LexendMega-SemiBold.ttf
         - asset: assets/fonts/LexendMega-Thin.ttf
-        
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
