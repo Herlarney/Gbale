@@ -7,12 +7,12 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:flutter/material.dart' as _i12;
 import 'package:flutter/material.dart';
+import 'package:gbale/view/dashboard/dashboard_view.dart' as _i11;
 import 'package:gbale/view/forgot/forgot_password_view.dart' as _i7;
 import 'package:gbale/view/homepage/components/feed.dart' as _i8;
 import 'package:gbale/view/homepage/components/log_out.dart' as _i9;
 import 'package:gbale/view/homepage/homepageview.dart' as _i6;
 import 'package:gbale/view/login/login_view.dart' as _i4;
-import 'package:gbale/view/notification/notification_view.dart' as _i11;
 import 'package:gbale/view/request/request_view.dart' as _i10;
 import 'package:gbale/view/Signup/signup_view.dart' as _i3;
 import 'package:gbale/view/splash_screen/splash_view.dart' as _i2;
@@ -39,7 +39,7 @@ class Routes {
 
   static const request = '/Request';
 
-  static const notification = '/Notification';
+  static const dashboard = '/Dashboard';
 
   static const all = <String>{
     splashView,
@@ -51,7 +51,7 @@ class Routes {
     feedView,
     logOut,
     request,
-    notification,
+    dashboard,
   };
 }
 
@@ -94,8 +94,8 @@ class StackedRouter extends _i1.RouterBase {
       page: _i10.Request,
     ),
     _i1.RouteDef(
-      Routes.notification,
-      page: _i11.Notification,
+      Routes.dashboard,
+      page: _i11.Dashboard,
     ),
   ];
 
@@ -157,9 +157,9 @@ class StackedRouter extends _i1.RouterBase {
         settings: data,
       );
     },
-    _i11.Notification: (data) {
+    _i11.Dashboard: (data) {
       return _i1.buildAdaptivePageRoute<dynamic>(
-        builder: (context) => const _i11.Notification(),
+        builder: (context) => const _i11.Dashboard(),
         settings: data,
       );
     },
@@ -306,14 +306,14 @@ extension NavigatorStateExtension on _i13.NavigationService {
         transition: transition);
   }
 
-  Future<dynamic> navigateToNotification([
+  Future<dynamic> navigateToDashboard([
     int? routerId,
     bool preventDuplicates = true,
     Map<String, String>? parameters,
     Widget Function(BuildContext, Animation<double>, Animation<double>, Widget)?
         transition,
   ]) async {
-    return navigateTo<dynamic>(Routes.notification,
+    return navigateTo<dynamic>(Routes.dashboard,
         id: routerId,
         preventDuplicates: preventDuplicates,
         parameters: parameters,
@@ -448,14 +448,14 @@ extension NavigatorStateExtension on _i13.NavigationService {
         transition: transition);
   }
 
-  Future<dynamic> replaceWithNotification([
+  Future<dynamic> replaceWithDashboard([
     int? routerId,
     bool preventDuplicates = true,
     Map<String, String>? parameters,
     Widget Function(BuildContext, Animation<double>, Animation<double>, Widget)?
         transition,
   ]) async {
-    return replaceWith<dynamic>(Routes.notification,
+    return replaceWith<dynamic>(Routes.dashboard,
         id: routerId,
         preventDuplicates: preventDuplicates,
         parameters: parameters,
