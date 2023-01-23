@@ -41,7 +41,7 @@ class Home extends ViewModelWidget<HomePageViewModel> {
                         backgroundImage: AssetImage('images/portrait.png')),
                     const GbaleSpacing.width(10),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () => model.navigateToDashBoard(),
                       child: CustomText(
                         text: 'Rasheed Ogunbade',
                         textStyle: textheme.bodySmall,
