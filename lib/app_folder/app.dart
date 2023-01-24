@@ -1,10 +1,12 @@
 import 'package:gbale/view/Signup/signup_view.dart';
+import 'package:gbale/view/dashboard/dashboard_view.dart';
 
 import 'package:gbale/view/forgot/forgot_password_view.dart';
 import 'package:gbale/view/homepage/components/feed.dart';
 import 'package:gbale/view/homepage/components/log_out.dart';
 import 'package:gbale/view/homepage/homepageview.dart';
 import 'package:gbale/view/login/login_view.dart';
+
 import 'package:gbale/view/request/request_view.dart';
 import 'package:gbale/view/splash_screen/splash_view.dart';
 import 'package:gbale/view/uoload/uoload_view.dart';
@@ -20,7 +22,8 @@ import 'package:stacked_services/stacked_services.dart';
   AdaptiveRoute(page: ForgotPasswordView),
   AdaptiveRoute(page: FeedView),
   AdaptiveRoute(page: LogOut),
-  AdaptiveRoute(page: Request)
+  AdaptiveRoute(page: Request),
+  AdaptiveRoute(page: Dashboard),
 ], dependencies: [
   LazySingleton(classType: NavigationService)
 ])

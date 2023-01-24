@@ -18,4 +18,10 @@ class HomePageViewModel extends IndexTrackingViewModel {
       Routes.request,
     );
   }
+
+  void navigateToDashBoard() {
+    _navigationService.navigateTo(
+      Routes.dashboard,
+    );
+  }
 }

@@ -41,7 +41,7 @@ class LoginView extends StatelessWidget {
                   prefixIcon: const Icon(Icons.email),
                   hintText: 'Email',
                 ),
-                const GbaleSpacing.height(50),
+                const GbaleSpacing.height(20),
                 GbaleTextFormFieldWidget(
                   prefixIcon: const Icon(Icons.visibility),
                   hintText: 'Password',
