@@ -13,7 +13,7 @@ import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 @StackedApp(routes: [
-  AdaptiveRoute(page: SplashView, initial: true ),
+  AdaptiveRoute(page: SplashView, initial: true),
   AdaptiveRoute(page: SignUpView),
   AdaptiveRoute(page: LoginView),
   AdaptiveRoute(page: UploadView),
