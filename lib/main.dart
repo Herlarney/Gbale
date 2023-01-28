@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:gbale/app_folder/app.router.dart';
 import 'package:gbale/app_folder/app.locator.dart';
 
 import 'package:gbale/core/theme/gbale_theme_manager.dart';
-import 'package:gbale/view/manage_portfolio/manage_portfolio_view.dart';
+import 'package:stacked_services/stacked_services.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,9 +28,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Gbale',
-      // navigatorKey: StackedService.navigatorKey,
-      // onGenerateRoute: StackedRouter().onGenerateRoute,
-      home: const ManagePortfolio(),
+      navigatorKey: StackedService.navigatorKey,
+      onGenerateRoute: StackedRouter().onGenerateRoute,
+
+    
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: GbaleThemeManager.lightTheme,
