@@ -5,7 +5,7 @@
 // **************************************************************************
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:flutter/material.dart' as _i12;
+import 'package:flutter/material.dart' as _i13;
 import 'package:flutter/material.dart';
 import 'package:gbale/view/dashboard/dashboard_view.dart' as _i11;
 import 'package:gbale/view/forgot/forgot_password_view.dart' as _i7;
@@ -13,12 +13,13 @@ import 'package:gbale/view/homepage/components/feed.dart' as _i8;
 import 'package:gbale/view/homepage/components/log_out.dart' as _i9;
 import 'package:gbale/view/homepage/homepageview.dart' as _i6;
 import 'package:gbale/view/login/login_view.dart' as _i4;
+import 'package:gbale/view/notification/notification_view.dart' as _i12;
 import 'package:gbale/view/request/request_view.dart' as _i10;
 import 'package:gbale/view/Signup/signup_view.dart' as _i3;
 import 'package:gbale/view/splash_screen/splash_view.dart' as _i2;
 import 'package:gbale/view/uoload/uoload_view.dart' as _i5;
 import 'package:stacked/stacked.dart' as _i1;
-import 'package:stacked_services/stacked_services.dart' as _i13;
+import 'package:stacked_services/stacked_services.dart' as _i14;
 
 class Routes {
   static const splashView = '/';
@@ -41,6 +42,8 @@ class Routes {
 
   static const dashboard = '/Dashboard';
 
+  static const notificationView = '/notification-view';
+
   static const all = <String>{
     splashView,
     signUpView,
@@ -52,6 +55,7 @@ class Routes {
     logOut,
     request,
     dashboard,
+    notificationView,
   };
 }
 
@@ -96,6 +100,10 @@ class StackedRouter extends _i1.RouterBase {
     _i1.RouteDef(
       Routes.dashboard,
       page: _i11.Dashboard,
+    ),
+    _i1.RouteDef(
+      Routes.notificationView,
+      page: _i12.NotificationView,
     ),
   ];
 
@@ -163,6 +171,12 @@ class StackedRouter extends _i1.RouterBase {
         settings: data,
       );
     },
+    _i12.NotificationView: (data) {
+      return _i1.buildAdaptivePageRoute<dynamic>(
+        builder: (context) => const _i12.NotificationView(),
+        settings: data,
+      );
+    },
   };
 
   @override
@@ -174,10 +188,10 @@ class StackedRouter extends _i1.RouterBase {
 class HomePageViewArguments {
   const HomePageViewArguments({this.key});
 
-  final _i12.Key? key;
+  final _i13.Key? key;
 }
 
-extension NavigatorStateExtension on _i13.NavigationService {
+extension NavigatorStateExtension on _i14.NavigationService {
   Future<dynamic> navigateToSplashView([
     int? routerId,
     bool preventDuplicates = true,
@@ -235,7 +249,7 @@ extension NavigatorStateExtension on _i13.NavigationService {
   }
 
   Future<dynamic> navigateToHomePageView({
-    _i12.Key? key,
+    _i13.Key? key,
     int? routerId,
     bool preventDuplicates = true,
     Map<String, String>? parameters,
@@ -320,6 +334,20 @@ extension NavigatorStateExtension on _i13.NavigationService {
         transition: transition);
   }
 
+  Future<dynamic> navigateToNotificationView([
+    int? routerId,
+    bool preventDuplicates = true,
+    Map<String, String>? parameters,
+    Widget Function(BuildContext, Animation<double>, Animation<double>, Widget)?
+        transition,
+  ]) async {
+    return navigateTo<dynamic>(Routes.notificationView,
+        id: routerId,
+        preventDuplicates: preventDuplicates,
+        parameters: parameters,
+        transition: transition);
+  }
+
   Future<dynamic> replaceWithSplashView([
     int? routerId,
     bool preventDuplicates = true,
@@ -377,7 +405,7 @@ extension NavigatorStateExtension on _i13.NavigationService {
   }
 
   Future<dynamic> replaceWithHomePageView({
-    _i12.Key? key,
+    _i13.Key? key,
     int? routerId,
     bool preventDuplicates = true,
     Map<String, String>? parameters,
@@ -456,6 +484,20 @@ extension NavigatorStateExtension on _i13.NavigationService {
         transition,
   ]) async {
     return replaceWith<dynamic>(Routes.dashboard,
+        id: routerId,
+        preventDuplicates: preventDuplicates,
+        parameters: parameters,
+        transition: transition);
+  }
+
+  Future<dynamic> replaceWithNotificationView([
+    int? routerId,
+    bool preventDuplicates = true,
+    Map<String, String>? parameters,
+    Widget Function(BuildContext, Animation<double>, Animation<double>, Widget)?
+        transition,
+  ]) async {
+    return replaceWith<dynamic>(Routes.notificationView,
         id: routerId,
         preventDuplicates: preventDuplicates,
         parameters: parameters,
