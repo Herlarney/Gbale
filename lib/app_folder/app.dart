@@ -13,7 +13,7 @@ import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 @StackedApp(routes: [
-  AdaptiveRoute(page: SplashView, ),
+  AdaptiveRoute(page: SplashView, initial: true ),
   AdaptiveRoute(page: SignUpView),
   AdaptiveRoute(page: LoginView),
   AdaptiveRoute(page: UploadView),
@@ -22,7 +22,7 @@ import 'package:stacked_services/stacked_services.dart';
   AdaptiveRoute(page: FeedView),
   AdaptiveRoute(page: LogOut),
   AdaptiveRoute(page: Request),
-  AdaptiveRoute(page: NotificationView, initial: true),
+  AdaptiveRoute(page: NotificationView,),
 ], dependencies: [
   LazySingleton(classType: NavigationService)
 ])

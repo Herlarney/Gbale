@@ -7,6 +7,8 @@ import 'package:gbale/app_folder/app.locator.dart';
 import 'package:gbale/core/theme/gbale_theme_manager.dart';
 import 'package:stacked_services/stacked_services.dart';
 
+import 'view/manage_portfolio/manage_portfolio_view.dart';
+
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await setupLocator();
@@ -28,10 +30,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Gbale',
-      navigatorKey: StackedService.navigatorKey,
-      onGenerateRoute: StackedRouter().onGenerateRoute,
+      // navigatorKey: StackedService.navigatorKey,
+      // onGenerateRoute: StackedRouter().onGenerateRoute,
 
-    
+     home: const ManagePortfolio(),
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: GbaleThemeManager.lightTheme,

@@ -21,7 +21,7 @@ import 'package:stacked/stacked.dart' as _i1;
 import 'package:stacked_services/stacked_services.dart' as _i13;
 
 class Routes {
-  static const splashView = '/splash-view';
+  static const splashView = '/';
 
   static const signUpView = '/sign-up-view';
 
@@ -39,7 +39,7 @@ class Routes {
 
   static const request = '/Request';
 
-  static const notificationView = '/';
+  static const notificationView = '/notification-view';
 
   static const all = <String>{
     splashView,
