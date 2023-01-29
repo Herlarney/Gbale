@@ -27,7 +27,9 @@ import 'package:stacked_services/stacked_services.dart';
   AdaptiveRoute(page:  NotificationView)
 ], dependencies: [
   LazySingleton(classType: NavigationService)
-])
+],
+logger: StackedLogger(),
+)
 class AppSetup {
   /// This serves no purpose rather than using the [StackedApp] notation.
 }

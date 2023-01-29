@@ -10,35 +10,50 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.2
+  dartz: ^0.10.1
+
+  #Used to make network/http calls
+  dio: ^4.0.6
+
+  #An efficient way to for object equality
+  equatable: ^2.0.5
+  
   flutter:
     sdk: flutter
-    # used for adaptiveness and responsiveness
+
+  # used for adaptiveness and responsiveness
   flutter_screenutil: ^5.6.0
 
-  # Provider state management library extension with classes to boost mvvm architecture
+  # This library provides hooks that reduces code duplication.
+  flutter_hooks: ^0.18.5+1
+  
+  # Logging info to the console  
+  logger: ^1.1.0
+  
   google_fonts: ^3.0.1
+
+  # Provider state management library extension with classes to boost mvvm architecture
   stacked: ^3.0.1
   stacked_hooks: ^0.2.2
   stacked_services: ^0.9.8
-  
 
 dev_dependencies:
   build_runner: ^2.3.3
+  
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
   freezed_annotation: ^2.2.0
   stacked_generator: ^0.8.1
- 
 
 flutter:
   uses-material-design: true
-  
+
   assets:
     - assets/fonts/
     - images/
     - assets/png/
- 
+
   fonts:
     - family: LexendMega
       fonts:
