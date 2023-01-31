@@ -2,10 +2,7 @@
 import 'package:equatable/equatable.dart';
 
 class UserParam extends Equatable {
-  final String firstName;
-  final String lastName;
-  final String email;
-  final String password;
+ 
   const UserParam({
     required this.firstName,
     required this.lastName,
@@ -23,6 +20,18 @@ class UserParam extends Equatable {
       'password': password
     };
   }
+
+ /// This is the user firstName
+  final String firstName;
+
+ /// This is the user lastNmae 
+  final String lastName;
+
+ /// This is the user email
+  final String email;
+
+ /// This is the user password 
+  final String password;
 
   @override
   bool? get stringify => true;

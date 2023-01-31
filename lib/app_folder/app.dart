@@ -26,7 +26,8 @@ import 'package:stacked_services/stacked_services.dart';
   AdaptiveRoute(page: Dashboard),
   AdaptiveRoute(page:  NotificationView)
 ], dependencies: [
-  LazySingleton(classType: NavigationService)
+  LazySingleton(classType: NavigationService),
+ 
 ],
 logger: StackedLogger(),
 )

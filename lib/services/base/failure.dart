@@ -7,7 +7,7 @@ class Failure with EquatableMixin implements Exception {
   Failure({
     required this.devMessage,
     required this.prettMessage,
-    this.code,
+    this.code, 
   });
 
   /// This would hold a error message for the developer
