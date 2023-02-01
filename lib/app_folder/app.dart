@@ -1,3 +1,4 @@
+import 'package:gbale/services/media_service/image_service.dart';
 import 'package:gbale/view/Signup/signup_view.dart';
 import 'package:gbale/view/dashboard/dashboard_view.dart';
 
@@ -27,6 +28,7 @@ import 'package:stacked_services/stacked_services.dart';
   AdaptiveRoute(page:  NotificationView)
 ], dependencies: [
   LazySingleton(classType: NavigationService),
+  LazySingleton(classType: ImageService),
  
 ],
 logger: StackedLogger(),
